@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personality Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Personality Profile Survey</h1>
+  <p id="description">Your valuable input contributes to creating a diverse community profile.<br>Thank you for your time and openness!</p>
+
+  <form id="personality-form">
+    <fieldset class="details">
+      <legend>Enter your details</legend>
+      <label id="name-label">Name: <input required id="name" type="text" placeholder="John Doe"></label><br>
+      <label id="email-label">Email: <input required id="email" type="email" placeholder="johndoe@gmail.com"></label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>What is your zodiac sign?</legend>
+      <select id="zodiac-dropdown">
+        <option>(select option)</option>
+        <option>Aries</option>
+        <option>Taurus</option>
+        <option>Gemini</option>
+        <option>Cancer</option>
+        <option>Leo</option>
+        <option>Virgo</option>
+        <option>Libra</option>
+        <option>Scorpio</option>
+        <option>Sagittarius</option>
+        <option>Capricorn</option>
+        <option>Aquarius</option>
+        <option>Pisces</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Do you have a pet?</legend>
+      <label><input type="radio" value="yes" name="pet" checked /> Yes</label>
+      <label><input type="radio" value="no" name="pet"/> No</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Do you like busy environments?</legend>
+      <label><input type="radio" value="yes" name="busy-environment" checked /> Yes</label>
+      <label><input type="radio" value="no" name="busy-environment"/> No</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What are your favorite hobbies?</legend>
+      <label><input type="radio" value="reading" name="hobbies" checked /> Reading</label>
+      <label><input type="radio" value="sports" name="hobbies"/> Sports</label>
+      <label><input type="radio" value="music" name="hobbies"/> Music</label>
+      <label><input type="radio" value="arts" name="hobbies"/> Arts/Crafts</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferred social activities:</legend>
+      <label><input type="radio" value="movies" name="social-activities" checked /> Watching Movies</label>
+      <label><input type="radio" value="outing" name="social-activities"/> Going Out</label>
+      <label><input type="radio" value="gaming" name="social-activities"/> Gaming</label>
+      <label><input type="radio" value="cooking" name="social-activities"/> Cooking</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Are you more introverted or extroverted?</legend>
+      <label><input type="radio" value="introverted" name="intro-extro" checked /> Introverted</label>
+      <label><input type="radio" value="extroverted" name="intro-extro"/> Extroverted</label>
+    </fieldset>
+ 
+    <fieldset>
+      <legend>How do you express your emotions?</legend>
+      <textarea id="emotional-expression" placeholder="Share how you express your emotions"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Add any other comments</legend>
+      <textarea id="comments" placeholder="Share any additional comments or thoughts"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </fieldset>
+  </form>
+
+  <footer>
+    <p>Survey created by Camelia &copy; 2024</p>
+  </footer>
+</body>
+</html>
